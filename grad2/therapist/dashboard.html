@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Therapist — Dashboard</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/dashboard.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head><body>
+<header class="topbar"><a class="back" href="../index.html">← Home</a><div class="brand">RAFIQ — Dashboard</div><nav class="tiny"><a href="reports.html">Reports</a> <a href="../admin/cms.html">CMS</a></nav></header>
+<main class="container">
+  <section class="dash-grid">
+    <div class="card">
+      <h3>Pronunciation Accuracy</h3>
+      <canvas id="accChart" height="140"></canvas>
+    </div>
+    <div class="card">
+      <h3>Attention (live)</h3>
+      <div class="meter"><div id="attFill" class="meter-fill" style="width:45%"></div></div>
+      <div class="metric">Avg: <strong id="attAvg">45%</strong></div>
+    </div>
+    <div class="card wide">
+      <h3>Recent Sessions</h3>
+      <ul id="recentSessions"></ul>
+    </div>
+  </section>
+</main>
+<script src="../js/therapist/dashboard.js"></script>
+</body></html>

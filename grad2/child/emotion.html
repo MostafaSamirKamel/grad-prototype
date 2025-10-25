@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Child — Emotion</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/child.css"></head><body>
+<header class="topbar small"><a class="back" href="speech.html">← Back</a><div class="brand">RAFIQ — Emotion</div></header>
+<main class="container">
+  <section class="session-card">
+    <h2>Emotion & Attention Demo</h2>
+    <p class="instruction">Allow camera access. A simulated detector will show attention & emotion values.</p>
+    <div class="camera-box">
+      <video id="cam" autoplay playsinline muted></video>
+      <div class="cam-stats">Eye contact: <span id="eye">—</span> | Attention: <span id="att">—</span></div>
+    </div>
+
+    <div class="controls">
+      <button id="camToggle" class="btn">Start Camera</button>
+      <button id="calibrate" class="btn outline">Calibrate</button>
+    </div>
+  </section>
+</main>
+<script src="../js/child/emotion.js"></script>
+</body></html>

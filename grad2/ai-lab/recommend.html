@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>AI Lab — Recommend</title><link rel="stylesheet" href="../css/global.css"></head><body>
+<header class="topbar small"><a class="back" href="../index.html">← Home</a><div class="brand">AI Lab</div></header>
+<main class="container">
+  <section class="card">
+    <h2>Recommendation Simulator</h2>
+    <div class="form-row"><label>Accuracy<input id="rAcc" type="number" value="70" min="0" max="100"></label><label>Attention<input id="rAtt" type="number" value="60" min="0" max="100"></label></div>
+    <button id="runRec" class="btn">Run Recommendation</button>
+    <div class="result">Suggested: <strong id="recOut">—</strong></div>
+  </section>
+</main>
+<script src="../js/ai/recommend.js"></script>
+</body></html>

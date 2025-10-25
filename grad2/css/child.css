@@ -1,0 +1,7 @@
+/* child specific */
+.instruction{color:var(--muted);margin-bottom:8px}
+.word-card{font-size:28px;padding:10px;border-radius:8px;background:linear-gradient(90deg,#fff,#f8fafc);display:inline-block}
+.controls{display:flex;gap:8px;margin-top:12px}
+.feedback{margin-top:12px;background:#fff;padding:10px;border-radius:8px;box-shadow:var(--shadow)}
+.side-panel{position:fixed;right:24px;top:120px;width:220px}
+.game-feedback{margin-top:12px;color:var(--muted)}

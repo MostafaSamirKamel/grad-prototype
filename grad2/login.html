@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login — RAFIQ</title><link rel="stylesheet" href="css/global.css"></head><body>
+<div class="auth-wrap">
+  <form id="loginForm" class="card auth-card">
+    <h2>Login</h2>
+    <label>Role
+      <select id="role">
+        <option value="therapist">Therapist</option>
+        <option value="parent">Parent</option>
+        <option value="child">Child</option>
+        <option value="admin">Admin</option>
+      </select>
+    </label>
+    <label>Email<input id="email" type="email" required></label>
+    <label>Password<input id="password" type="password" required></label>
+    <div class="actions">
+      <button type="submit" class="btn">Sign in</button>
+      <a href="register.html" class="link">Register</a>
+    </div>
+  </form>
+</div>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const role = document.getElementById('role').value;
+  const user = {email:document.getElementById('email').value, role};
+  localStorage.setItem('rafiq_user', JSON.stringify(user));
+  // redirect based on role
+  if(role==='therapist') location.href='therapist/dashboard.html';
+  else if(role==='child') location.href='child/speech.html';
+  else if(role==='admin') location.href='admin/cms.html';
+  else location.href='index.html';
+});
+</script>
+</body></html>

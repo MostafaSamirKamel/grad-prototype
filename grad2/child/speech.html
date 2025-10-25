@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Child — Speech Practice</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/child.css"></head><body>
+<header class="topbar small">
+  <a class="back" href="../index.html">← Home</a>
+  <div class="brand">RAFIQ — Speech</div>
+  <div></div>
+</header>
+
+<main class="container">
+  <section class="session-card">
+    <h2>Repeat After Me</h2>
+    <p class="instruction">Say the shown word clearly into the microphone. Score and feedback will appear below.</p>
+
+    <div class="word-card"><strong id="targetWord">apple</strong></div>
+
+    <div class="controls">
+      <button id="micBtn" class="btn">🎤 Start Listening</button>
+      <button id="playBtn" class="btn outline">🔊 Play Example</button>
+    </div>
+
+    <div class="feedback">
+      <div>Transcript: <span id="transcript">—</span></div>
+      <div>Pronunciation Score: <span id="score">—</span></div>
+    </div>
+
+    <div class="session-actions">
+      <button id="saveSession" class="btn">Save Session</button>
+      <button id="nextWord" class="btn outline">Next Word</button>
+    </div>
+  </section>
+
+  <aside class="side-panel">
+    <h4>Session Stats</h4>
+    <ul id="statList"><li>Matches: <span id="statMatches">0</span></li><li>Avg Score: <span id="statAvg">—</span></li></ul>
+    <h4>Tools</h4>
+    <button id="openCam" class="btn">Open Camera (Emotion Demo)</button>
+  </aside>
+
+</main>
+
+<script src="../js/child/speech.js"></script>
+</body></html>

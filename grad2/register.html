@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Register — RAFIQ</title><link rel="stylesheet" href="css/global.css"></head><body>
+<div class="auth-wrap">
+  <form id="regForm" class="card auth-card">
+    <h2>Register</h2>
+    <label>Name<input id="rname" required></label>
+    <label>Email<input id="remail" type="email" required></label>
+    <label>Role
+      <select id="rrole">
+        <option value="parent">Parent</option>
+        <option value="therapist">Therapist</option>
+        <option value="child">Child</option>
+      </select>
+    </label>
+    <label>Password<input id="rpass" type="password" required></label>
+    <div class="actions">
+      <button class="btn">Create account</button>
+      <a class="link" href="login.html">Have an account?</a>
+    </div>
+  </form>
+</div>
+<script>
+document.getElementById('regForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const users = JSON.parse(localStorage.getItem('rafiq_users')||'[]');
+  users.push({name:document.getElementById('rname').value,email:document.getElementById('remail').value,role:document.getElementById('rrole').value});
+  localStorage.setItem('rafiq_users', JSON.stringify(users));
+  alert('Account created — please login');
+  location.href='login.html';
+});
+</script>
+</body></html>

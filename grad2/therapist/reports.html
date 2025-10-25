@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Reports — RAFIQ</title><link rel="stylesheet" href="../css/global.css"></head><body>
+<header class="topbar small"><a class="back" href="dashboard.html">← Dashboard</a><div class="brand">Reports</div></header>
+<main class="container">
+  <section class="card">
+    <h2>Printable Report</h2>
+    <p>Export a weekly summary of sessions.</p>
+    <button id="printBtn" class="btn">Print Report (demo)</button>
+    <div id="reportContent" class="report-content"></div>
+  </section>
+</main>
+<script>
+document.getElementById('printBtn').addEventListener('click', ()=>{ window.print(); });
+</script>
+</body></html>

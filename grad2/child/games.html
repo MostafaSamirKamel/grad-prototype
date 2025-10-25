@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Child — Games</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/child.css"></head><body>
+<header class="topbar small"><a class="back" href="speech.html">← Back</a><div class="brand">RAFIQ — Games</div></header>
+<main class="container">
+  <section class="session-card">
+    <h2>Matching Game</h2>
+    <p class="instruction">Drag an image to the target box.</p>
+    <div class="game-area">
+      <div id="dropTarget" class="drop-target">?</div>
+      <div class="tiles">
+        <img draggable="true" class="tile" src="https://picsum.photos/seed/1/100/100" data-name="apple">
+        <img draggable="true" class="tile" src="https://picsum.photos/seed/2/100/100" data-name="banana">
+        <img draggable="true" class="tile" src="https://picsum.photos/seed/3/100/100" data-name="orange">
+      </div>
+    </div>
+    <div id="gameFeedback" class="game-feedback"></div>
+  </section>
+</main>
+<script src="../js/child/games.js"></script>
+</body></html>
